@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>업무통합프로그램 안내</title>
+<meta name="description" content="투윈원솔루션 업무통합프로그램 — 설치 파일, 사용 안내, 업데이트 방법">
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--ink:#1d2433;--sub:#5b6476;--line:#e3e7ef;--navy:#1f3a6e;--accent:#2b6cb0;--ok:#e8f3ff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121620;--card:#1a2030;--ink:#e8ecf4;--sub:#9aa5ba;--line:#2a3345;--navy:#9ec2ff;--accent:#6fa8ff;--ok:#1d2b44}}
+:root[data-theme="dark"]{--bg:#121620;--card:#1a2030;--ink:#e8ecf4;--sub:#9aa5ba;--line:#2a3345;--navy:#9ec2ff;--accent:#6fa8ff;--ok:#1d2b44}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;font-size:17px;line-height:1.65}
+.wrap{max-width:760px;margin:0 auto;padding:32px 16px 64px}
+h1{font-size:30px;margin:0 0 6px;color:var(--navy)}
+.lead{color:var(--sub);margin:0 0 24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 22px;margin:0 0 18px}
+h2{font-size:20px;margin:0 0 12px}
+.btn{display:inline-block;padding:14px 22px;border-radius:10px;background:var(--accent);color:#fff;font-weight:700;text-decoration:none;font-size:18px;margin:6px 10px 6px 0}
+.btn.sec{background:transparent;color:var(--accent);border:2px solid var(--accent)}
+ol,ul{padding-left:22px;margin:8px 0}
+li{margin:6px 0}
+code{background:var(--ok);padding:2px 6px;border-radius:5px;font-size:.95em}
+.note{color:var(--sub);font-size:15px;margin-top:10px}
+table{width:100%;border-collapse:collapse;margin-top:8px}
+th,td{border:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top;font-size:16px}
+th{background:var(--ok);white-space:nowrap}
+footer{color:var(--sub);font-size:14px;margin-top:28px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>업무통합프로그램</h1>
+<p class="lead">투윈원솔루션 계약 병원용 인사·근무 프로그램 — 현재 버전 <strong>1.3.1</strong> (2026-11-06)</p>
+
+<div class="card">
+<h2>다운로드</h2>
+<a class="btn" href="https://biseo-138-2-31-102.sslip.io/updates/hr/TwinoneHR-setup-1.3.1.zip">설치 파일 받기 (zip, 약 22MB)</a>
+<a class="btn sec" href="업무통합프로그램_팀장안내.pdf">팀장 안내 PDF</a>
+<p class="note">병원 PC(윈도우) 한 대에만 설치합니다. 직원은 설치 없이 원내 와이파이로 폰에서 접속합니다.</p>
+</div>
+
+<div class="card">
+<h2>설치 (3분)</h2>
+<ol>
+<li>받은 zip을 압축 해제 → <code>install.bat</code>을 <strong>관리자 권한으로 실행</strong>.</li>
+<li>바탕화면 바로가기 <strong>업무통합프로그램</strong>으로 실행 → 처음 화면에서 병원명·관리자 계정을 만듭니다.</li>
+<li><strong>설정 → 근무형태</strong>에서 병원에 맞는 형태를 고릅니다 (주5일 / 주6일·주1회 휴무 / 주6일·법정연차). 이어서 부서·직급·근무유형·병원 로고·도장.</li>
+<li>직원 명부 입력(엑셀 가져오기 가능) → <strong>설정 → 접속 주소</strong>의 QR을 직원에게 보여 주면 폰에서 가입합니다. 팀장이 승인하면 사용 시작.</li>
+</ol>
+<p class="note">데이터는 <code>C:\Twinone\HR\data</code>에만 저장되고 매일 자동 백업됩니다. 설정 → 백업에서 보조 폴더(USB·NAS)를 추가로 지정할 수 있습니다.</p>
+</div>
+
+<div class="card">
+<h2>팀장이 하는 일</h2>
+<table>
+<tr><th>언제</th><th>무엇을</th></tr>
+<tr><td>매주</td><td>근무표 주간 보기에서 특이사항(OFF·연차·야간)만 입력 — 안 적은 평일은 자동으로 근무</td></tr>
+<tr><td>매주</td><td>휴가 신청함 승인 / 보류 / 반려 (2단계 결재면 원장 최종 승인) · 식사발주표로 업체 주문</td></tr>
+<tr><td>매달</td><td>월별 근무 결산 → 엑셀·인쇄 (근무일·야간·연장·휴무·연차·식대·급여) · 식사 월별 결산</td></tr>
+<tr><td>매년 1월</td><td>연차 → 올해 연차 제안(법정 기준) 확인 후 부여</td></tr>
+<tr><td>수시</td><td>공지(공통·부서별) · 병원일정 · 익명 건의함 답변 · 관리자 알림 확인</td></tr>
+</table>
+</div>
+
+<div class="card">
+<h2>직원이 하는 일 (폰)</h2>
+<ul>
+<li>가입 신청(서명 포함) → 승인 후 <strong>휴가 신청</strong>(연차계획서 자동 작성) · <strong>식사 선택</strong>(날짜별) · <strong>야간·연장</strong> 기록 · 내 근무 확인 · 익명 건의</li>
+<li>물리치료사는 <strong>내 예약</strong>에서 환자 예약 관리</li>
+<li>앱 안 <strong>사용설명서</strong> 메뉴에 그림과 함께 쉽게 설명되어 있습니다.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>업데이트</h2>
+<ul>
+<li>새 버전이 나오면 프로그램이 하루 1회 확인하고, <strong>자동 업데이트(기본 켬)</strong>면 새벽 2~5시에 혼자 적용합니다 (백업 후 교체, 실패 시 자동 복구).</li>
+<li>바로 적용하려면 설정 → 업데이트 → <strong>업데이트 적용</strong>.</li>
+<li>인터넷이 안 되는 PC는 위 설치 파일을 USB로 옮겨 설정 → 업데이트에서 zip 선택.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>문의 · 건의</h2>
+<p style="margin:0">사용 중 불편한 점이나 추가로 필요한 기능은 투윈원 정대용 부장에게 알려 주시면 다음 버전에 반영합니다.</p>
+</div>
+
+<footer>투윈원솔루션 · 업무통합프로그램 by 정부장</footer>
+</div>
+</body>
+</html>
